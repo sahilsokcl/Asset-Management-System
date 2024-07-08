@@ -65,6 +65,220 @@ const data = {
       }
     ]
   };
+// data.js
+export const componentData = [
+  {
+    picture: 'https://rukminim2.flixcart.com/image/850/1000/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=90&crop=false',
+    name: 'Camera',
+    type: 'Hardwares',
+    brand: 'Cannon',
+    quantity: 1,
+    availableQuantity: 1
+  },
+  {
+    picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9lYTakBxDl_HdYDXy-YtTvofxxPtLl0eUA&s',
+    name: 'Laptop',
+    type: 'Extrusion',
+    brand: 'HP',
+    quantity: 123,
+    availableQuantity: 123
+  },
+  {
+    picture: 'https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/11/microsd-card.jpg',
+    name: 'tf',
+    type: 'Hardwares',
+    brand: 'Micr SD',
+    quantity: 1234,
+    availableQuantity: 1000
+  },
+  {
+    picture: 'https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/alienware/peripherals/alienware-320m-mouse/assets/mouse-alienware-aw320m-black-gallery-5.psd?fmt=pjpg&pscan=auto&scl=1&wid=2159&hei=1540&qlt=100,1&resMode=sharp2&size=2159,1540&chrss=full&imwidth=5000',
+    name: ' Mouse',
+    type: 'Hardwares',
+    brand: 'Hp',
+    quantity: 100,
+    availableQuantity: 0
+  },
+  {
+    picture: 'https://rukminim2.flixcart.com/image/850/1000/xif0q/keyboard/desktop-keyboard/w/l/6/gaming-keyboard-with-87-keys-rgb-backlit-with-suspension-keys-original-imagzcgwtrabgjna.jpeg?q=20&crop=false',
+    name: 'Keyboard',
+    type: 'Electronics',
+    brand: 'Samsung',
+    quantity: 50,
+    availableQuantity: 45
+  },
+  {
+    picture: 'https://via.placeholder.com/150',
+    name: 'Another Component',
+    type: 'Mechanics',
+    brand: 'Bosch',
+    quantity: 200,
+    availableQuantity: 180
+  }, {
+    picture: 'https://via.placeholder.com/150',
+    name: 'TOOL',
+    type: 'Hardwares',
+    brand: 'Epson',
+    quantity: 1,
+    availableQuantity: 1
+  },
+  {
+    picture: 'https://via.placeholder.com/150',
+    name: 'tes',
+    type: 'Extrusion',
+    brand: 'Epson',
+    quantity: 123,
+    availableQuantity: 123
+  },
+  {
+    picture: 'https://via.placeholder.com/150',
+    name: 'tf',
+    type: 'Hardwares',
+    brand: 'Epson',
+    quantity: 1234,
+    availableQuantity: 1000
+  },
+  {
+    picture: 'https://via.placeholder.com/150',
+    name: 'asadf',
+    type: 'Hardwares',
+    brand: 'Epson',
+    quantity: 100,
+    availableQuantity: 0
+  },
+  {
+    picture: 'https://via.placeholder.com/150',
+    name: 'New Component',
+    type: 'Electronics',
+    brand: 'Samsung',
+    quantity: 50,
+    availableQuantity: 45
+  },
+  {
+    picture: 'https://via.placeholder.com/150',
+    name: 'Another Component',
+    type: 'Mechanics',
+    brand: 'Bosch',
+    quantity: 200,
+    availableQuantity: 180
+  }
+  // Add more data as needed
+];
+
+
+
+
+// Data.js
+export const maintenanceData = [
+  {
+    id: 1,
+    assetTag: 'ASTZ20213126',
+    asset: 'Hp Printer',
+    supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+    type: 'Repair',
+    startDate: '2024-07-10',
+    endDate: '2024-07-31'
+  },
+  {
+    id: 2,
+    assetTag: 'ASTZ20515152',
+    asset: 'SPOLO16',
+    supplier: 'hecan',
+    type: 'Hardware support',
+    startDate: '2024-06-27',
+    endDate: '2024-10-30'
+  },
+  {
+    id: 3,
+    assetTag: 'ASTZ30125217',
+    asset: 'TEST PC',
+    supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+    type: 'Upgrade',
+    startDate: '2024-06-27',
+    endDate: '2024-06-30'
+  },
+  {
+    id: 4,
+    assetTag: 'ASTZ20213126',
+    asset: 'Hp Printer',
+    supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+    type: 'Repair',
+    startDate: '2024-06-24',
+    endDate: '2024-06-28'
+  },
+  {
+    id: 5,
+    assetTag: 'ASTZ20209126',
+    asset: 'Bag',
+    supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+    type: 'Maintenance',
+    startDate: '2024-06-23',
+    endDate: '2024-06-23'
+  },
+  {
+    id: 6,
+    assetTag: 'ASTZ3010238',
+    asset: 'Printer HP Laster Jeet shum i fort kollor',
+    supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+    type: 'Testing',
+    startDate: '2024-06-27',
+    endDate: '2024-06-27'
+  }
+];
+
+
+// export const maintenanceData = [
+//   {
+//     assetTag: 'ASTZ20213126',
+//     asset: 'Hp Printer',
+//     supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+//     type: 'Repair',
+//     startDate: '2024-07-10',
+//     endDate: '2024-07-31'
+//   },
+//   {
+//     assetTag: 'ASTZ20515152',
+//     asset: 'SPOLO16',
+//     supplier: 'hecan',
+//     type: 'Hardware support',
+//     startDate: '2024-06-27',
+//     endDate: '2024-10-30'
+//   },
+//   {
+//     assetTag: 'ASTZ30125217',
+//     asset: 'TEST PC',
+//     supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+//     type: 'Upgrade',
+//     startDate: '2024-06-27',
+//     endDate: '2024-06-30'
+//   },
+//   {
+//     assetTag: 'ASTZ20213126',
+//     asset: 'Hp Printer',
+//     supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+//     type: 'Repair',
+//     startDate: '2024-06-24',
+//     endDate: '2024-06-28'
+//   },
+//   {
+//     assetTag: 'ASTZ20209126',
+//     asset: 'Bag',
+//     supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+//     type: 'Maintenance',
+//     startDate: '2024-06-23',
+//     endDate: '2024-06-23'
+//   },
+//   {
+//     assetTag: 'ASTZ3010238',
+//     asset: 'Printer HP Laster Jeet shum i fort kollor',
+//     supplier: 'SRI MALLIKARJUNA EQUIPMENTS',
+//     type: 'Testing',
+//     startDate: '2024-06-27',
+//     endDate: '2024-06-27'
+//   }
+// ];
+
+
   
   export default data;
   

@@ -15,6 +15,7 @@ import Employees from './Pages/Employees'
 import Departments from './Pages/Department'
 import Reports from './Pages/Report'
 import Setting from './Pages/Setting'
+import UserPage from "./Pages/UserPage";
 
 
 function App(){
@@ -80,6 +81,9 @@ function App(){
     {
       path:"/login",
       element:<Login/>
+    },{
+      path:"/user",
+      element:<UserPage/>
     }
 
 ]);

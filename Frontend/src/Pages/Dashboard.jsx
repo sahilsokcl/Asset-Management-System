@@ -7,6 +7,7 @@ import 'chart.js/auto';
 import { FaUser,FaTools } from 'react-icons/fa';
 import { SiRetool } from "react-icons/si";
 import { AiFillHdd } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 
 const Dashboard = () => {
 
@@ -87,11 +88,11 @@ const Dashboard = () => {
       <SiRetool size={40} />
       <div class="ml-4">
         <p class="text-sm text-zinc-600">Total Assets</p>
-        <p class="text-xl font-bold">96</p>
+        <p class="text-xl font-bold">231</p>
       </div>
     </div>
     <div class="flex justify-end mt-4 cursor-pointer">
-      <span>More Info</span>
+    <Link to="/assets">More Info</Link>
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
       </svg>
@@ -106,8 +107,8 @@ const Dashboard = () => {
         <p class="text-xl font-bold">3,650</p>
       </div>
     </div>
-    <div class="flex justify-end mt-4 ">
-    <span className='cursor-pointer'>More Info</span>
+    <div class="flex justify-end mt-4 cursor-pointer ">
+    <Link to="/components">More Info</Link>
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
       </svg>
@@ -119,7 +120,7 @@ const Dashboard = () => {
       <FaTools size={40} />
       <div class="ml-4">
         <p class="text-md font-semibold text-zinc-900">Total Maintenance</p>
-        <p class="text-xl font-bold">356</p>
+        <p class="text-xl font-bold">35</p>
       </div>
     </div>
     <div class="flex justify-end mt-4 ">
@@ -135,7 +136,7 @@ const Dashboard = () => {
       <FaUser size={40} />
       <div class="ml-4">
         <p class="text-sm text-zinc-600">Total Employee</p>
-        <p class="text-xl font-bold">696</p>
+        <p class="text-xl font-bold">110</p>
       </div>
     </div>
     <div class="flex justify-end mt-4 ">
@@ -159,59 +160,60 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
-          <div className="bg-white p-4 rounded shadow overflow-x-auto">
-            <h2 className="text-center text-xl font-semibold mb-2">Recent asset activity</h2>
-            <table {...recentAssetActivityTable.getTableProps()} className="min-w-full bg-white border border-gray-200">
-              <thead>
-                {recentAssetActivityTable.headerGroups.map(headerGroup => (
-                  <tr {...headerGroup.getHeaderGroupProps()} className="bg-gray-100 border-b">
-                    {headerGroup.headers.map(column => (
-                      <th {...column.getHeaderProps()} className="text-left p-2">{column.render('Header')}</th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody {...recentAssetActivityTable.getTableBodyProps()}>
-                {recentAssetActivityTable.rows.map(row => {
-                  recentAssetActivityTable.prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()} className="border-b">
-                      {row.cells.map(cell => (
-                        <td {...cell.getCellProps()} className="p-2">{cell.render('Cell')}</td>
-                      ))}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-          <div className="bg-white p-4 rounded shadow overflow-x-auto">
-            <h2 className="text-center text-xl font-semibold mb-2">Recent component activity</h2>
-            <table {...recentComponentActivityTable.getTableProps()} className="min-w-full bg-white border border-gray-200">
-              <thead>
-                {recentComponentActivityTable.headerGroups.map(headerGroup => (
-                  <tr {...headerGroup.getHeaderGroupProps()} className="bg-gray-100 border-b">
-                    {headerGroup.headers.map(column => (
-                      <th {...column.getHeaderProps()} className="text-left p-2">{column.render('Header')}</th>
-                    ))}
-                  </tr>
-                ))}
-              </thead>
-              <tbody {...recentComponentActivityTable.getTableBodyProps()}>
-                {recentComponentActivityTable.rows.map(row => {
-                  recentComponentActivityTable.prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()} className="border-b">
-                      {row.cells.map(cell => (
-                        <td {...cell.getCellProps()} className="p-2">{cell.render('Cell')}</td>
-                      ))}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>
+  <div className="bg-white p-4 rounded shadow overflow-x-auto">
+    <h2 className="text-center text-xl font-semibold mb-2">Recent asset activity</h2>
+    <table {...recentAssetActivityTable.getTableProps()} className="min-w-full bg-white border border-gray-200">
+      <thead>
+        {recentAssetActivityTable.headerGroups.map(headerGroup => (
+          <tr {...headerGroup.getHeaderGroupProps()} className="bg-gray-100 border-b">
+            {headerGroup.headers.map(column => (
+              <th {...column.getHeaderProps()} className="text-left p-2 font-medium text-gray-700">{column.render('Header')}</th>
+            ))}
+          </tr>
+        ))}
+      </thead>
+      <tbody {...recentAssetActivityTable.getTableBodyProps()}>
+        {recentAssetActivityTable.rows.map((row, i) => {
+          recentAssetActivityTable.prepareRow(row);
+          return (
+            <tr {...row.getRowProps()} className={`${i % 2 === 0 ? 'bg-gray-50' : 'bg-white'} border-b`}>
+              {row.cells.map(cell => (
+                <td {...cell.getCellProps()} className="p-2">{cell.render('Cell')}</td>
+              ))}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+  <div className="bg-white p-4 rounded shadow overflow-x-auto">
+    <h2 className="text-center text-xl font-semibold mb-2">Recent component activity</h2>
+    <table {...recentComponentActivityTable.getTableProps()} className="min-w-full bg-white border border-gray-200">
+      <thead>
+        {recentComponentActivityTable.headerGroups.map(headerGroup => (
+          <tr {...headerGroup.getHeaderGroupProps()} className="bg-gray-100 border-b">
+            {headerGroup.headers.map(column => (
+              <th {...column.getHeaderProps()} className="text-left p-2 font-medium text-gray-700">{column.render('Header')}</th>
+            ))}
+          </tr>
+        ))}
+      </thead>
+      <tbody {...recentComponentActivityTable.getTableBodyProps()}>
+        {recentComponentActivityTable.rows.map((row, i) => {
+          recentComponentActivityTable.prepareRow(row);
+          return (
+            <tr {...row.getRowProps()} className={`${i % 2 === 0 ? 'bg-gray-50' : 'bg-white'} border-b`}>
+              {row.cells.map(cell => (
+                <td {...cell.getCellProps()} className="p-2">{cell.render('Cell')}</td>
+              ))}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+</div>
+
       </div>
     </div>
   );
