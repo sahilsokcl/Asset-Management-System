@@ -63,7 +63,7 @@ const Maintenance = () => {
   } = useTable({
     columns,
     data,
-    initialState: { pageIndex: 0, pageSize: 5 }
+    initialState: { pageIndex: 0, pageSize: 10 }
   }, useGlobalFilter, usePagination);
 
   const handleCopy = () => {

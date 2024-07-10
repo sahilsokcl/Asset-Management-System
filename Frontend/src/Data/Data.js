@@ -227,6 +227,315 @@ export const maintenanceData = [
 ];
 
 
+export const depreciationData = [
+  {
+    name: 'Bag',
+    cost: 500,
+    periodMonth: 12,
+    category: 'Asset',
+    assetValue: 500
+  },
+  {
+    name: 'Camera IP',
+    cost: 2600,
+    periodMonth: 1,
+    category: 'Asset',
+    assetValue: 500
+  },
+  {
+    name: 'Product 1',
+    cost: 125,
+    periodMonth: 12,
+    category: 'Component',
+    assetValue: 10
+  },
+  {
+    name: 'test',
+    cost: 200000,
+    periodMonth: 5 ,
+    category: 'Asset',
+    assetValue: 100000,
+  },
+  {
+    name: 'Dell Loptop',
+    cost: 50000,
+    periodMonth: 12,
+    category: 'Asset',
+    assetValue: 30000,
+  },
+  {
+    name: 'demo component',
+    cost: 1,
+    periodMonth: 1,
+    category: 'Component',
+    assetValue: 1,
+  },
+  {
+    name: 'HP printer',
+    cost: 10000,
+    periodMonth: 12,
+    category: 'Asset',
+    assetValue: 14000,
+  },
+  {
+    name: 'PC ASUS	',
+    cost: 12900,
+    periodMonth: 1,
+    category: 'Asset',
+    assetValue: 15000,
+  },
+  {
+    name: 'CC Tv	',
+    cost: 5000,
+    periodMonth: 12,
+    category: 'Asset',
+    assetValue: 3000,
+  },
+  {
+    name: 'Macbook air	',
+    cost: 1250000,
+    periodMonth: 12,
+    category: 'Asset',
+    assetValue: 20000,
+  }
+];
+
+export const assetTypesData = [
+  {
+    name: 'Hardwares',
+    description: 'Door Locks' 
+  },
+  {
+    name: 'Extrusion',
+    description: 'Bi-fold door	' 
+  },
+  {
+    name: 'Extrusion',
+    description: 'Curtain Wall	' 
+  },
+  {
+    name: 'Notebook',
+    description: 'User Notebook	' 
+  },
+  {
+    name: 'AUTOMATIC TRANSFER SWITCH	',
+    description: 'AUTOMATIC TRANSFER SWITCH	' 
+  },
+  {
+    name: 'SWITCHGEAR',
+    description: 'SWITCHGEAR' 
+  },
+  {
+    name: 'TRANSFORMER',
+    description: 'TRANSFORMER' 
+  },
+  {
+    name: 'STRING BATTERY	',
+    description: 'STRING BATTERY' 
+  },
+  {
+    name: 'chair',
+    description: 'Normal' 
+  },
+  {
+    name: 'CPU',
+    description: 'Central Processing Unit	' 
+  },
+  {
+    name: 'Testing',
+    description: 'Asset Type Testing	' 
+  },
+  {
+    name: 'Asset Type Testing	',
+    description: '' 
+  },
+];
+
+  export const brandData = [
+      {
+        name: 'Epson',
+        description: 'DvD' 
+      },
+      {
+        name: 'JOHN BEAN	',
+        description: '' 
+      },
+      {
+        name: 'ASUS',
+        description: '' 
+      },
+      {
+        name: 'Apple',
+        description: 'all Apple' 
+      },
+      {
+        name: 'DELL',
+        description: 'Laptop' 
+      },
+      {
+        name: 'Frontech',
+        description: 'fronttech-headphone' 
+      },
+      {
+        name: 'LG',
+        description: 'LG-AC' 
+      },
+      {
+        name: 'Surya',
+        description: 'Light' 
+      },
+      {
+        name: 'Frontech',
+        description: 'E-cam' 
+      },
+      {
+        name: 'Nilkamal',
+        description: 'Chair' 
+      },
+      {
+        name: 'Jio',
+        description: 'Jio-WiFi' 
+      },
+      {
+        name: 'Epson',
+        description: 'Printer' 
+      },
+  ];
+
+  export const supplierData = [
+    {
+      name: 'High Tech	',
+      email:'rathnafanhouse@gmail.com	' ,
+      phone:28155535 ,
+      address: 'jaydev Vihar',
+      city: 'BBSR',
+      country:'IND'
+    },
+    {
+      name: 'rajat',
+      email: 'rajata@gmail.com',
+      phone: 876566787,
+      address: 'Nayapali',
+      city: 'bbsr',
+      country:'IND'
+    },
+    {
+      name: 'Sahil',
+      email: 'sahil@gmail.com',
+      phone:98989898 ,
+      address: 'link Road',
+      city: 'CTC' ,
+      country:'Ind'
+    },
+    {
+      name: 'Punya',
+      email: 'punya@gmail.com' ,
+      phone:6565656565 ,
+      address: 'R.K valley',
+      city:'Jajpur' ,
+      country:'IND'
+    },
+    {
+      name: 'Sadab Hussain',
+      email: 'sadab@gmail.com' ,
+      phone: 11144446,
+      address: 'Missilkenagar',
+      city: 'Karachi',
+      country:'PAK'
+    },
+    {
+      name: 'Osama',
+      email: 'osama@gmail.com',
+      phone: 'UNknown Num',
+      address: 'Bonbnagar',
+      city: 'Lahore' ,
+      country:'PAK'
+    },
+    {
+      name: 'Donald',
+      email: 'donald@gmail.com',
+      phone: 'UNknown Num',
+      address: 'VK park',
+      city: 'park street',
+      country:'US'
+    },
+    {
+      name: 'hecan',
+      email: 'hc@gmail.com	',
+      phone: 123456789,
+      address: 'axcvb nmj	',
+      city: 13,
+      country:'Korea, Republic of	'
+    },
+    {
+      name: 'End IN	',
+      email: 'admin@example.com	',
+      phone: 9876543210	,
+      address: 'abc	',
+      city: 'abcd',
+      country:'Soltan Mozafar	'
+    },
+    {
+      name: 'SRI MALLIKARJUNA EQUIPMENTS	',
+      email: 'smpe1407@gmail.com	',
+      phone: 7989798097,
+      address: 'Sri Mallikarjuna Pneumatics & Equipments 2-3-89, Kusuma Nivas, Ramgopalpet Ranigunj, Secunderabad -500003	',
+      city: 'HYDERABAD',
+      country:'IND'
+    }
+  ];
+
+  export const locationData = [
+    {
+      name: 'Gasha high school - Erbil	',
+      description: 'GHSE' 
+    },
+    {
+      name: 'Skudai	',
+      description: 'UTM Office	' 
+    },
+    {
+      name: 'Testing Locations	',
+      description: '' 
+    },
+    {
+      name: 'Private Room 101	',
+      description: 'Private Room 101	' 
+    },
+    {
+      name: 'ITCH',
+      description: 'Company at Chhauni' 
+    },
+    {
+      name: 'Delhi',
+      description: 'Delhi Supplier	' 
+    },
+    {
+      name: 'ACI TORINO	',
+      description: 'test' 
+    },
+    {
+      name: 'Surya',
+      description: 'gaya' 
+    },
+    {
+      name: 'Frontech',
+      description: 'office' 
+    },
+    {
+      name: 'Nilkamal',
+      description: 'room2' 
+    },
+    {
+      name: 'Jio',
+      description: 'room3' 
+    },
+    {
+      name: 'Epson',
+      description: 'room4' 
+    },
+]; 
+
 // export const maintenanceData = [
 //   {
 //     assetTag: 'ASTZ20213126',
