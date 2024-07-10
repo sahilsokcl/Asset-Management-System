@@ -35,7 +35,7 @@ const Depreciation = () => {
             title="Edit"
           >
             <FaEdit />
-          </button>
+          </button> 
           <button
             onClick={() => handleDelete(row.index)}
             className="bg-red-500 text-white p-1 rounded"
