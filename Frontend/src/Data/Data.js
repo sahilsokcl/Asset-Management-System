@@ -587,6 +587,50 @@ export const assetTypesData = [
 //   }
 // ];
 
+export const depreciationData = [
+  { name: 'Bag', cost: 500, period: 12, category: 'Asset', assetValue: 500 },
+  { name: 'Camera IP', cost: 2600, period: 1, category: 'Asset', assetValue: 500 },
+  { name: 'Product 1', cost: 125, period: 12, category: 'Component', assetValue: 10 },
+  { name: 'test', cost: 200000, period: 5, category: 'Asset', assetValue: 100000 },
+  { name: '-', cost: '-', period: 4, category: '-', assetValue: 300000 },
+  { name: 'Bed', cost: 15000, period: 3, category: 'Asset', assetValue: 400 },
+  { name: 'HP Pavilion Laptop', cost: 50000, period: 12, category: 'Asset', assetValue: 2500 },
+  { name: 'PC 50', cost: 500, period: 14, category: 'Asset', assetValue: 30000 },
+  { name: 'demo component', cost: 1, period: 1, category: 'Component', assetValue: 1 },
+  { name: '-', cost: '-', period: 24, category: '-', assetValue: 50 },
+  { name: 'Bag', cost: 500, period: 12, category: 'Asset', assetValue: 500 },
+  { name: 'Camera IP', cost: 2600, period: 1, category: 'Asset', assetValue: 500 },
+  { name: 'Product 1', cost: 125, period: 12, category: 'Component', assetValue: 10 },
+  { name: 'test', cost: 200000, period: 5, category: 'Asset', assetValue: 100000 },
+  { name: '-', cost: '-', period: 4, category: '-', assetValue: 300000 },
+  { name: 'Bed', cost: 15000, period: 3, category: 'Asset', assetValue: 400 },
+  { name: 'HP Pavilion Laptop', cost: 50000, period: 12, category: 'Asset', assetValue: 2500 },
+  { name: 'PC 50', cost: 500, period: 14, category: 'Asset', assetValue: 30000 },
+  { name: 'demo component', cost: 1, period: 1, category: 'Component', assetValue: 1 },
+  { name: '-', cost: '-', period: 24, category: '-', assetValue: 50 },
+  { name: 'Bag', cost: 500, period: 12, category: 'Asset', assetValue: 500 },
+  { name: 'Camera IP', cost: 2600, period: 1, category: 'Asset', assetValue: 500 },
+  { name: 'Product 1', cost: 125, period: 12, category: 'Component', assetValue: 10 },
+  { name: 'test', cost: 200000, period: 5, category: 'Asset', assetValue: 100000 },
+  { name: '-', cost: '-', period: 4, category: '-', assetValue: 300000 },
+  { name: 'Bed', cost: 15000, period: 3, category: 'Asset', assetValue: 400 },
+  { name: 'HP Pavilion Laptop', cost: 50000, period: 12, category: 'Asset', assetValue: 2500 },
+  { name: 'PC 50', cost: 500, period: 14, category: 'Asset', assetValue: 30000 },
+  { name: 'demo component', cost: 1, period: 1, category: 'Component', assetValue: 1 },
+  { name: '-', cost: '-', period: 24, category: '-', assetValue: 50 },
+  { name: 'Bag', cost: 500, period: 12, category: 'Asset', assetValue: 500 },
+  { name: 'Camera IP', cost: 2600, period: 1, category: 'Asset', assetValue: 500 },
+  { name: 'Product 1', cost: 125, period: 12, category: 'Component', assetValue: 10 },
+  { name: 'test', cost: 200000, period: 5, category: 'Asset', assetValue: 100000 },
+  { name: '-', cost: '-', period: 4, category: '-', assetValue: 300000 },
+  { name: 'Bed', cost: 15000, period: 3, category: 'Asset', assetValue: 400 },
+  { name: 'HP Pavilion Laptop', cost: 50000, period: 12, category: 'Asset', assetValue: 2500 },
+  { name: 'PC 50', cost: 500, period: 14, category: 'Asset', assetValue: 30000 },
+  { name: 'demo component', cost: 1, period: 1, category: 'Component', assetValue: 1 },
+  { name: '-', cost: '-', period: 24, category: '-', assetValue: 50 }
+  
+];
+
 
   
   export default data;
