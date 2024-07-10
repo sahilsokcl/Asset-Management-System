@@ -16,6 +16,7 @@ import Departments from './Pages/Department'
 import Reports from './Pages/Report'
 import Setting from './Pages/Setting'
 import UserPage from "./Pages/UserPage";
+import DepreciationTable from "./Pages/depreciationTable";
 
 
 function App(){
